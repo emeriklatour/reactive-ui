@@ -1,0 +1,6 @@
+packages:
+    - "packages/configurations/**"
+    - "packages/css/**"
+    - "packages/react/**"
+    - "storybook"
+    - "!**/dist/**"

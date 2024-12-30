@@ -1,0 +1,18 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "tasks": {
+        "affected:workspaces": {},
+        "js-compile": {
+            "outputs": ["dist/**"]
+        },
+        "scss-packaging": {},
+        "packing": {
+            "dependsOn": ["js-compile", "build", "lint", "test"]
+        },
+        "build": {},
+        "lint": {},
+        "test": {
+            "cache": false
+        }
+    }
+}

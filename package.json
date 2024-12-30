@@ -1,0 +1,22 @@
+{
+    "name": "root",
+    "private": "true",
+    "description": "",
+    "author": "Reactive UI",
+    "scripts": {
+        "preinstall": "npx -y only-allow pnpm",
+        "dev": "pnpm --filter @reactv-ui/storybook run storybook",
+        "build:all": "turbo run build",
+        "test:all": "turbo run test",
+        "storybook": "pnpm dev"
+    },
+    "packageManager": "pnpm@9.15.2",
+    "engines": {
+        "node": "^23.x",
+        "pnpm": "^9"
+    },
+    "devDependencies": {
+        "@changesets/cli": "^2.27.11",
+        "turbo": "^2.3.3"
+    }
+}
